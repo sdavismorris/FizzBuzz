@@ -8,7 +8,7 @@ class FizzBuzz {
     public static void main(String[] args) {
         int i = 0;
         while (i <= 100) {
-            i = FizzBuzz(i);
+            i = doFizzBuzz(i);
         }
 
 
@@ -39,7 +39,7 @@ class FizzBuzz {
 //        }
     }
 
-    private static int FizzBuzz(int i) {
+    static int doFizzBuzz(int i) {
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
 
